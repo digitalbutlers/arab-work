@@ -1,0 +1,55 @@
+body {
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+  	}
+}
+
+.js-scrolled,
+.js-opened {
+	background-color: #13131f;
+	transition: background-color 300ms linear;
+
+	.brand-logo {
+		color: #ffffff;
+		transition: color 300ms linear;
+	}
+
+	.header__burger-line {
+		background-color: #ffffff;
+		transition: background-color 300ms linear;
+	}
+}
+
+.news__content-link {
+    width: fit-content;
+    border-bottom: 1px solid #FE5001;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #13131f inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media screen and (min-width: 1920px) {
+	.header__nav-mask {
+		width: calc(50vw - 15.6rem)
+	}
+}
